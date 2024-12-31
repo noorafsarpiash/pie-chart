@@ -1,4 +1,4 @@
-import { Grid2 } from "@mui/material"
+import { Container, Grid2 } from "@mui/material"
 import Navbar from "./components/Navbar"
 import Result from "./components/Result"
 import SliderComponet from "./components/common/SliderComponet"
@@ -14,17 +14,19 @@ function App() {
       <div>
 
         <Navbar />
-        <Grid2 container spacing={5}>
-          <Grid2>
-            <SliderSelect />
-            <Tenure />
-          </Grid2>
-          <Grid2>
-            <Result />
-          </Grid2>
+        <Container maxWidth={"xl"}>
+          <Grid2 container spacing={5}>
+            <Grid2 item size={6}>
+              <SliderSelect />
+              <Tenure />
+            </Grid2>
+            <Grid2 size={6}>
+              <Result />
+            </Grid2>
 
 
-        </Grid2>
+          </Grid2>
+        </Container>
       </div>
 
     </>

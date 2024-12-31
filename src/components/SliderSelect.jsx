@@ -1,9 +1,10 @@
 import React from 'react'
+import SliderComponet from './common/SliderComponet'
 
 const SliderSelect = () => {
   return (
     <div>
-      <h1>SliderSelect</h1>
+      <SliderComponet />
     </div>
   )
 }
